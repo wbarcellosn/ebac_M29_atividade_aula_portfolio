@@ -1,6 +1,6 @@
 import EstiloGlobal, { Container } from './Styles'
 import About from './containers/About'
-import Projects from './containers/Porjects'
+import Projects from './containers/Projects'
 import Sidebar from './containers/Sidebar'
 
 function App() {
