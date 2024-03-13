@@ -3,7 +3,11 @@ import Paragraph from '../../components/Paragraph'
 import Title from '../../components/Title'
 import { Description, Button, SidebarContainer } from './styles'
 
-function Sidebar() {
+type Props = {
+  chageTheme: () => void
+}
+
+function Sidebar(props: Props) {
   return (
     <aside>
       <SidebarContainer>
@@ -15,7 +19,7 @@ function Sidebar() {
         <Description fontSize={12} type="primary">
           Engenheiro Front-end
         </Description>
-        <Button type="button">Trocar tema</Button>
+        <Button onClick={props.chageTheme}>Trocar tema</Button>
       </SidebarContainer>
     </aside>
   )
